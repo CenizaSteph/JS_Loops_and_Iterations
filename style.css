@@ -2,3 +2,47 @@ body {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
+
+/* CSS for the buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* CSS for the slide in/out animations */
+.slideIn {
+    animation: slide-in .5s ease-out;
+}
+
+.slideOut {
+    animation: slide-out .5s ease-in;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
